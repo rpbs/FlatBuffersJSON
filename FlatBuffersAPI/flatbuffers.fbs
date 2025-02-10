@@ -1,0 +1,57 @@
+namespace FlatBuffersModels;
+
+table ProjectAssignment {
+  assignment_id: int;
+  user_id: int;
+  project: string;
+  role: string;
+  start_date: string;
+  end_date: string;
+  status: string;
+}
+
+table User {
+  user_id: int;
+  name: string;
+  age: int;
+  email: string;
+  phone_number: string;
+  address: string;
+  city: string;
+  state: string;
+  zip_code: string;
+  country: string;
+  birth_date: string;
+  join_date: string;
+  salary: float;
+  department: string;
+  position: string;
+  experience_years: int;
+  is_active: bool;
+  rating: double;
+  notes: string;
+  project: string;
+  manager: string;
+  last_promotion_date: string;
+  hobbies: string;
+  skills: string;
+  favorite_color: string;  
+}
+
+table UserProfile {
+  profile_id: int;
+  user_id: int;
+  bio: string;
+  profile_picture: string;
+  website: string;
+  date_of_birth: string;
+  created_at: string; 
+}
+
+table DataTypeTest {
+    id: string;
+    binary_data: [byte];
+    json_data: string;
+}
+
+root_type User;
